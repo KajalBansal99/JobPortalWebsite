@@ -1,13 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobPortal - Find Your Dream Job</title>
+    <!-- Link to your CSS (adjust path if needed) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header (Include from 'includes' folder) -->
+    <?php include('includes/header.php'); ?>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Find Your Dream Job Today</h1>
+            <p>Thousands of jobs waiting for you.</p>
+            <a href="src/jobs.html" class="btn">Browse Jobs</a>
+        </div>
+    </section>
+
+    <!-- Featured Jobs -->
+    <section class="featured-jobs">
+        <h2>Featured Jobs</h2>
+        <div class="job-listings">
+            <!-- Dynamically load jobs from database (replace with PHP later) -->
+            <div class="job-card">
+                <h3>Web Developer</h3>
+                <p>Google • Remote • $80,000/yr</p>
+                <a href="src/job-detail.html?id=1" class="btn">View Details</a>
+            </div>
+            <!-- Add more job cards as needed -->
+        </div>
+        <a href="src/jobs.html" class="btn">See All Jobs</a>
+    </section>
+
+    <!-- Call-to-Action -->
+    <section class="cta">
+        <h2>Ready to Apply?</h2>
+        <a href="src/jobs.html" class="btn">Get Started</a>
+    </section>
+
+    <!-- Footer (Include from 'includes' folder) -->
+    <?php include('includes/footer.php'); ?>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
